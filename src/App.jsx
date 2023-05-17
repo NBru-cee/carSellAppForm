@@ -191,7 +191,7 @@ function App() {
                               </label>
                         </label>
                         <br />
-                        <Box display="flex" gap="2rem">
+                        <Box display="flex" gap="2rem" my={2}>
                               <select
                                     value={transmission}
                                     onChange={(e) =>
@@ -232,6 +232,7 @@ function App() {
                                     variant="contained"
                                     color="success"
                                     type="submit"
+                                    sx={{ mt: "1rem" }}
                               >
                                     Submit
                               </Button>

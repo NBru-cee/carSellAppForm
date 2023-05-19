@@ -14,11 +14,13 @@ input[type="date"] {
 }
 
 .wrapper {
-      background-image: url('./assets/daily-travel-car.png');
+      background-image: url('./assets/image3.jpg');
       background-repeat: no-repeat;
       background-size: contain;
+      width: 100%;
 }
 
 .mainForm {
+
       background: whitesmoke;
 }

@@ -46,7 +46,9 @@ function App() {
                   py="3rem"
                   className="wrapper"
             >
-                  <Typography variant="h5">Car Sell App Form</Typography>
+                  <Typography variant="h5" color="indigo">
+                        Car Sell App Form
+                  </Typography>
                   <form
                         onSubmit={handleFormSubmit}
                         style={{

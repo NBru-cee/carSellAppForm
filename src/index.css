@@ -16,8 +16,7 @@ input[type="date"] {
 .wrapper {
       background-image: url('./assets/image3.jpg');
       background-repeat: no-repeat;
-      background-size: contain;
-      width: 100%;
+      background-size: cover;
 }
 
 .mainForm {

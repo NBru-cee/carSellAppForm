@@ -14,21 +14,7 @@ function App() {
       let errorMessage = "";
       const handleFormSubmit = (event) => {
             event.preventDefault();
-            if (
-                  (carMake ||
-                        carModel ||
-                        year ||
-                        mileage ||
-                        condition ||
-                        transmission ||
-                        priceRange ||
-                        contactNumber ||
-                        features) === ("" || [])
-            ) {
-                  setTimeout(() => {
-                        errorMessage = "All fields are required!";
-                  }, 2000);
-            }
+
             console.log("Form submitted:", {
                   carMake,
                   carModel,
@@ -172,6 +158,7 @@ function App() {
 
                         <label style={{ margin: "2rem 0" }}>
                               Features:
+                              <br />
                               <label>
                                     <input
                                           type="checkbox"

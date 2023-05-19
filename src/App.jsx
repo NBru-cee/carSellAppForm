@@ -11,7 +11,6 @@ function App() {
       const [transmission, setTransmission] = useState("");
       const [priceRange, setPriceRange] = useState(0);
       const [contactNumber, setContactNumber] = useState("");
-      let errorMessage = "";
       const handleFormSubmit = (event) => {
             event.preventDefault();
 
@@ -60,10 +59,6 @@ function App() {
                               flexDirection: "column",
                         }}
                   >
-                        <Typography variant="h6" color="red">
-                              {errorMessage}
-                        </Typography>
-
                         <TextField
                               label=" Car Make"
                               type="text"
@@ -102,58 +97,59 @@ function App() {
                               />
                         </label>
 
-                        <label>Condition:</label>
-
                         <label>
-                              <input
-                                    type="radio"
-                                    name="condition"
-                                    value="Excellent"
-                                    checked={condition === "Excellent"}
-                                    onChange={(e) =>
-                                          setCondition(e.target.value)
-                                    }
-                              />
-                              Excellent
-                        </label>
-                        <br />
-                        <label>
-                              <input
-                                    type="radio"
-                                    name="condition"
-                                    value="Good"
-                                    checked={condition === "Good"}
-                                    onChange={(e) =>
-                                          setCondition(e.target.value)
-                                    }
-                              />
-                              Good
-                        </label>
-
-                        <label>
-                              <input
-                                    type="radio"
-                                    name="condition"
-                                    value="Fair"
-                                    checked={condition === "Fair"}
-                                    onChange={(e) =>
-                                          setCondition(e.target.value)
-                                    }
-                              />
-                              Fair
-                        </label>
-
-                        <label>
-                              <input
-                                    type="radio"
-                                    name="condition"
-                                    value="Poor"
-                                    checked={condition === "Poor"}
-                                    onChange={(e) =>
-                                          setCondition(e.target.value)
-                                    }
-                              />
-                              Poor
+                              Condition: <br />
+                              <label>
+                                    <input
+                                          type="radio"
+                                          name="condition"
+                                          value="Excellent"
+                                          checked={condition === "Excellent"}
+                                          onChange={(e) =>
+                                                setCondition(e.target.value)
+                                          }
+                                    />
+                                    Excellent
+                              </label>
+                              <br />
+                              <label>
+                                    <input
+                                          type="radio"
+                                          name="condition"
+                                          value="Good"
+                                          checked={condition === "Good"}
+                                          onChange={(e) =>
+                                                setCondition(e.target.value)
+                                          }
+                                    />
+                                    Good
+                              </label>
+                              <br />
+                              <label>
+                                    <input
+                                          type="radio"
+                                          name="condition"
+                                          value="Fair"
+                                          checked={condition === "Fair"}
+                                          onChange={(e) =>
+                                                setCondition(e.target.value)
+                                          }
+                                    />
+                                    Fair
+                              </label>
+                              <br />
+                              <label>
+                                    <input
+                                          type="radio"
+                                          name="condition"
+                                          value="Poor"
+                                          checked={condition === "Poor"}
+                                          onChange={(e) =>
+                                                setCondition(e.target.value)
+                                          }
+                                    />
+                                    Poor
+                              </label>
                         </label>
 
                         <label style={{ margin: "2rem 0" }}>
@@ -209,7 +205,7 @@ function App() {
                               value={transmission}
                               onChange={(e) => setTransmission(e.target.value)}
                               style={{
-                                    fontSize: "1.5rem",
+                                    fontSize: "1rem",
                                     fontWeight: 400,
                               }}
                         >
@@ -218,7 +214,9 @@ function App() {
                               <option value="automatic">Automatic</option>
                         </select>
 
-                        <label htmlFor="price">Price</label>
+                        <label htmlFor="price" style={{ marginTop: "1rem" }}>
+                              Price:
+                        </label>
                         <input
                               type="range"
                               min="0"
@@ -227,6 +225,7 @@ function App() {
                               id="price"
                               value={priceRange}
                               onChange={(e) => setPriceRange(e.target.value)}
+                              style={{ marginBottom: "1rem" }}
                         />
                         <TextField
                               label="Phone Number"

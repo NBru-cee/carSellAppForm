@@ -44,6 +44,7 @@ function App() {
                   justifyContent={"center"}
                   flexDirection={"column"}
                   py="3rem"
+                  className="wrapper"
             >
                   <Typography variant="h5">Car Sell App Form</Typography>
                   <form
@@ -58,6 +59,7 @@ function App() {
                               justifyContent: "center",
                               flexDirection: "column",
                         }}
+                        className="mainForm"
                   >
                         <TextField
                               label=" Car Make"

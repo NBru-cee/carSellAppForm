@@ -12,3 +12,13 @@ input[type="date"] {
       min-width: 15rem;
       max-width: 15rem;
 }
+
+.wrapper {
+      background-image: url('./assets/daily-travel-car.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+}
+
+.mainForm {
+      background: whitesmoke;
+}

@@ -46,9 +46,6 @@ function App() {
                   py="3rem"
                   className="wrapper"
             >
-                  <Typography variant="h5" color="indigo">
-                        Car Sell App Form
-                  </Typography>
                   <form
                         onSubmit={handleFormSubmit}
                         style={{
@@ -63,6 +60,9 @@ function App() {
                         }}
                         className="mainForm"
                   >
+                        <Typography variant="h5" color="orange">
+                              Car Sell App Form
+                        </Typography>
                         <TextField
                               label=" Car Make"
                               type="text"
@@ -101,7 +101,7 @@ function App() {
                               />
                         </label>
 
-                        <label>
+                        <label style={{ margin: "1rem 0" }}>
                               Condition: <br />
                               <label>
                                     <input

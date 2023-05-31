@@ -11,6 +11,7 @@ function App() {
       const [transmission, setTransmission] = useState("");
       const [priceRange, setPriceRange] = useState(0);
       const [contactNumber, setContactNumber] = useState("");
+
       const handleFormSubmit = (event) => {
             event.preventDefault();
 
